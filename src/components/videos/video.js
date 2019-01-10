@@ -8,13 +8,12 @@ import Title from '@youversion/melos/dist/components/typography/Title'
 import VerticalSpace from '@youversion/melos/dist/components/layouts/VerticalSpace'
 import Button from '@youversion/melos/dist/components/links/Button'
 import LinkText from '@youversion/melos/dist/components/links/LinkText'
-import { Div } from 'glamorous'
 import { videoDetailsJson } from '../../api/video-api-mock'
 
 const Video = ({ match }) => {
 	const video = videoDetailsJson.response.data
 
-  return (
+	return (
 		<div>
 			<Helmet>
 				<title>{video.title} - {video.credits} | Videos | The Bible App | Bible.com</title>
@@ -26,7 +25,16 @@ const Video = ({ match }) => {
 				<Link style={{ textDecoration: 'none' }} to={`/videos/${video.id}/publisher`}><LinkText size={30}>{video.credits}</LinkText></Link>
 
 				{/* Video Player */}
-				<Div style={{ width: '100%', height: '632px', backgroundColor: 'black' }}></Div>
+				<div>
+					<video 
+						controls
+						style={{ height: '640px', width: '100%', background: 'black' }}
+						src={video.renditions.url}
+						allowFullScreen
+					>
+						<track kind="captions" />
+					</video>
+				</div>
 
 				<VerticalSpace space={0} width='65%' margin={20}>
 					<Title textAlign="left" muted>Related Scripture</Title>

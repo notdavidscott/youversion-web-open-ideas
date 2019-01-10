@@ -1407,7 +1407,7 @@ export const videoDetailsJson = {
 				name: 'LightWorkers Media'
 			},
 			sub_videos: null,
-			description: 'Jesus cries out to God from the cross, \u201cMy God, my God, why have you forsaken me?\u201d LightWorkers Media, from Matt. 27:45\u201356. Experience the rest of this story in <i>A.D.: The Bible Continues</i>, premiering Easter Sunday on NBC. Twitter: #ADTheSeries',
+			description: 'Jesus cries out to God from the cross, \u201cMy God, my God, why have you forsaken me?\u201d <br /> LightWorkers Media, from Matt. 27:45\u201356. Experience the rest of this story in <i>A.D.: The Bible Continues</i>, premiering Easter Sunday on NBC. Twitter: #ADTheSeries',
 			title: '\u201cWhy Have You Forsaken Me?\u201d',
 			renditions: [
 				{
